@@ -10,6 +10,7 @@
     <script>
         function redirectToApp() {
             // Mô phỏng redirect với tham số code
+            console.log("clicked");
             const callbackUrl = 'com.cimb.cimbsg.sit://callback?code=test123&state=xyz';
             window.location.href = callbackUrl;
         }
