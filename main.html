@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Callback</title>
+</head>
+<body>
+    <h1>Test Callback to Cordova App</h1>
+    <button onclick="redirectToApp()">Trigger Callback</button>
+
+    <script>
+        function redirectToApp() {
+            // Mô phỏng redirect với tham số code
+            const callbackUrl = 'com.cimb.cimbsg.sit://callback?code=test123&state=xyz';
+            window.location.href = callbackUrl;
+        }
+    </script>
+</body>
+</html>
